@@ -1,0 +1,7 @@
+torch
+torchvision
+torchaudio
+stable-baselines3
+gymnasium
+numpy
+matplotlib
