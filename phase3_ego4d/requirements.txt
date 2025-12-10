@@ -1,0 +1,28 @@
+# Phase 3: CLIP Teacher → MobileViT Student + Ego4D
+# Core ML
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+
+# CLIP Teacher
+transformers>=4.35.0
+open-clip-torch>=2.23.0
+
+# MobileViT Student  
+timm>=0.9.12
+
+# Ego4D Data
+ego4d>=1.6.0
+av>=10.0.0  # Video decoding
+decord>=0.6.0  # Fast video loading
+
+# Utilities
+pillow>=10.0.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Optional: Faster data loading
+# opencv-python>=4.8.0
+
