@@ -57,14 +57,12 @@ results/plots/*.png
 
 # Data (download separately)
 data/
-*.mp4
-*.avi
-*.jpg
-*.png
+
+# Large datasets (do NOT commit)
+EGTEA Gaze+/
 
 # Ego4D data
 ego4d_data/
-*.json
 
 # Temporary
 tmp/

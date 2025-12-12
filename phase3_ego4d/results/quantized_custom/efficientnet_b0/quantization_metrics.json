@@ -1,0 +1,16 @@
+{
+  "model": "efficientnet_b0",
+  "checkpoint": "results/distilled_custom/efficientnet_b0/best_student.pt",
+  "params": 4669576,
+  "ckpt_size_mb": 53.892991065979004,
+  "latency_cpu_ms": {
+    "mean_ms": 2363.926845000242,
+    "min_ms": 2337.981457996648,
+    "max_ms": 2444.5808750169817
+  },
+  "quantized_latency_cpu_ms": {
+    "mean_ms": 2365.9505508601433,
+    "min_ms": 2341.2179999868385,
+    "max_ms": 2448.1702499906532
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "generated": "2025-12-06T13:07:20.809005",
+  "experiments": {
+    "human_action_v2": {
+      "name": "Human Action Recognition v2",
+      "dataset": "Human Action (HuggingFace)",
+      "task": "15-class Image Classification",
+      "dataset_size": "12,600 images (10,080 train, 2,520 val)",
+      "num_classes": 15,
+      "frames_per_clip": 1,
+      "training": {
+        "epochs": 15,
+        "final_train_acc": 88.1547619047619,
+        "final_val_acc": 35.91269841269841,
+        "best_val_acc": 38.25396825396825,
+        "final_train_loss": 0.7492035163773431,
+        "final_val_loss": 1.289419356225029,
+        "train_val_gap": 52.24206349206349
+      },
+      "deployment": {
+        "teacher_latency_ms": 14.929836721566971,
+        "student_latency_ms": 12.780544149281923,
+        "speedup": 1.1681690972763321,
+        "bandwidth_saved_kb": 147.0,
+        "teacher_size_mb": 579.6193580627441,
+        "student_size_mb": 8.804012298583984,
+        "compression_ratio": 65.95258585701617,
+        "fps_30_bandwidth_mb_per_sec": 4.306640625
+      }
+    },
+    "human_action_v3": {
+      "name": "Human Action Recognition v3",
+      "dataset": "Human Action (HuggingFace)",
+      "task": "15-class Image Classification",
+      "dataset_size": "12,600 images (10,080 train, 2,520 val)",
+      "num_classes": 15,
+      "frames_per_clip": 1,
+      "training": {
+        "epochs": 20,
+        "final_train_acc": 92.99603174603175,
+        "final_val_acc": 60.71428571428571,
+        "best_val_acc": 75.27777777777777,
+        "final_train_loss": 1.0903410826410567,
+        "final_val_loss": 1.8642565961868043,
+        "train_val_gap": 32.28174603174604
+      },
+      "deployment": {
+        "teacher_latency_ms": 15.542476251139306,
+        "student_latency_ms": 12.532311230024789,
+        "speedup": 1.2401923289219623,
+        "bandwidth_saved_kb": 147.0,
+        "teacher_size_mb": 579.6193580627441,
+        "student_size_mb": 8.804012298583984,
+        "compression_ratio": 65.95258585701617,
+        "fps_30_bandwidth_mb_per_sec": 4.306640625
+      }
+    },
+    "ego4d": {
+      "name": "Ego4D Egocentric Video",
+      "dataset": "Ego4D",
+      "task": "8-class Video Action Recognition",
+      "dataset_size": "100 clips (80 train, 20 val)",
+      "num_classes": 8,
+      "frames_per_clip": 8,
+      "training": {
+        "epochs": 30,
+        "final_train_acc": 85.0,
+        "final_val_acc": 0.0,
+        "best_val_acc": 35.0,
+        "final_train_loss": 1.3453321933746338,
+        "final_val_loss": 2.629319095611572,
+        "train_val_gap": 85.0
+      },
+      "deployment": {
+        "teacher_latency_ms": 16.917469620821066,
+        "student_latency_ms": 13.155332561582327,
+        "speedup": 1.2859781036798228,
+        "bandwidth_saved_kb": 1176.0,
+        "teacher_size_mb": 579.6124954223633,
+        "student_size_mb": 8.797149658203125,
+        "compression_ratio": 66.00334717091293,
+        "fps_30_bandwidth_mb_per_sec": 34.453125
+      }
+    },
+    "egohands": {
+      "name": "EgoHands Egocentric Video",
+      "dataset": "EgoHands",
+      "task": "4-class Video Action Recognition",
+      "dataset_size": "~230 clips (80% train, 20% val)",
+      "num_classes": 4,
+      "frames_per_clip": 8,
+      "training": {
+        "epochs": 30,
+        "final_train_acc": 100.0,
+        "final_val_acc": 100.0,
+        "best_val_acc": 100.0,
+        "final_train_loss": 0.7622343954832658,
+        "final_val_loss": 0.7498830782956091,
+        "train_val_gap": 0.0
+      },
+      "deployment": {
+        "teacher_latency_ms": 17.09563461889047,
+        "student_latency_ms": 13.14856038952712,
+        "speedup": 1.3001905997638503,
+        "bandwidth_saved_kb": 1176.0,
+        "teacher_size_mb": 579.6085739135742,
+        "student_size_mb": 8.793228149414062,
+        "compression_ratio": 66.0323892745324,
+        "fps_30_bandwidth_mb_per_sec": 34.453125
+      }
+    },
+    "unified": {
+      "name": "Unified Egocentric (EgoHands + Ego4D)",
+      "dataset": "EgoHands + Ego4D",
+      "task": "12-class Video Action Recognition",
+      "dataset_size": "Combined from both datasets",
+      "num_classes": 12,
+      "frames_per_clip": 8,
+      "training": {
+        "epochs": 30,
+        "final_train_acc": 96.11111111111111,
+        "final_val_acc": 87.5,
+        "best_val_acc": 88.23529411764706,
+        "final_train_loss": 1.0228625341697974,
+        "final_val_loss": 1.217112099423128,
+        "train_val_gap": 8.611111111111114
+      },
+      "deployment": {
+        "teacher_latency_ms": 17.156114577082917,
+        "student_latency_ms": 12.907480418798514,
+        "speedup": 1.329160612329628,
+        "bandwidth_saved_kb": 1176.0,
+        "teacher_size_mb": 579.6164169311523,
+        "student_size_mb": 8.801071166992188,
+        "compression_ratio": 65.97433099490571,
+        "fps_30_bandwidth_mb_per_sec": 34.453125
+      }
+    }
+  }
+}

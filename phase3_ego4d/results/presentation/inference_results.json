@@ -1,0 +1,26 @@
+[
+  {
+    "sample": "video_000",
+    "prediction": "PUZZLE",
+    "confidence": 0.09872575104236603,
+    "top_probs": {
+      "PUZZLE": 0.09872575104236603,
+      "CHESS": 0.0951600894331932,
+      "looking_around": 0.09223276376724243,
+      "walking": 0.09126047044992447,
+      "turning": 0.08992398530244827
+    }
+  },
+  {
+    "sample": "video_001",
+    "prediction": "CHESS",
+    "confidence": 0.09750651568174362,
+    "top_probs": {
+      "CHESS": 0.09750651568174362,
+      "PUZZLE": 0.09676918387413025,
+      "walking": 0.08987307548522949,
+      "turning": 0.08781049400568008,
+      "looking_around": 0.0862102210521698
+    }
+  }
+]

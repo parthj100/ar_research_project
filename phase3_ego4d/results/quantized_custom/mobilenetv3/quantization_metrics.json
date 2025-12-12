@@ -1,0 +1,16 @@
+{
+  "model": "mobilenetv3",
+  "checkpoint": "results/distilled_custom/mobilenetv3/best_student.pt",
+  "params": 1819436,
+  "ckpt_size_mb": 16.55456256866455,
+  "latency_cpu_ms": {
+    "mean_ms": 838.2940774504095,
+    "min_ms": 829.2014579928946,
+    "max_ms": 891.3521249778569
+  },
+  "quantized_latency_cpu_ms": {
+    "mean_ms": 839.0410937301931,
+    "min_ms": 829.8617920081597,
+    "max_ms": 890.6942500034347
+  }
+}

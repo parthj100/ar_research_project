@@ -1,0 +1,232 @@
+{
+  "human_action_v2": {
+    "experiment": "Human Action v2",
+    "checkpoint": "results/human_action_v2/best_student.pt",
+    "model_size": {
+      "teacher_params": 151937808,
+      "student_params": 2303743,
+      "teacher_size_mb": 579.6193580627441,
+      "student_size_mb": 8.804012298583984,
+      "compression_ratio": 65.95258585701617
+    },
+    "latency": {
+      "teacher": {
+        "mean_ms": 14.929836721566971,
+        "std_ms": 1.1139855298078778,
+        "min_ms": 13.301750004757196,
+        "max_ms": 18.882042000768706,
+        "p50_ms": 14.643624497693963,
+        "p95_ms": 17.002762197807897
+      },
+      "student": {
+        "mean_ms": 12.780544149281923,
+        "std_ms": 0.8708165260931664,
+        "min_ms": 11.913166992599145,
+        "max_ms": 19.298208004329354,
+        "p50_ms": 12.590875019668601,
+        "p95_ms": 14.097795850830153
+      },
+      "speedup": 1.1681690972763321
+    },
+    "bandwidth": {
+      "teacher_bytes_per_inference": 150528.0,
+      "student_bytes_per_inference": 0.0,
+      "bandwidth_saved_bytes": 150528.0,
+      "bandwidth_saved_kb": 147.0,
+      "bandwidth_saved_mb": 0.1435546875,
+      "bandwidth_reduction_percent": 100.0,
+      "frames_per_clip": 1,
+      "image_size": "224\u00d7224"
+    },
+    "real_time_bandwidth": {
+      "fps_30_teacher_mb_per_sec": 4.306640625,
+      "fps_30_student_mb_per_sec": 0.0,
+      "fps_60_teacher_mb_per_sec": 8.61328125,
+      "fps_60_student_mb_per_sec": 0.0
+    }
+  },
+  "human_action_v3": {
+    "experiment": "Human Action v3",
+    "checkpoint": "results/human_action_v3/best_student.pt",
+    "model_size": {
+      "teacher_params": 151937808,
+      "student_params": 2303743,
+      "teacher_size_mb": 579.6193580627441,
+      "student_size_mb": 8.804012298583984,
+      "compression_ratio": 65.95258585701617
+    },
+    "latency": {
+      "teacher": {
+        "mean_ms": 15.542476251139306,
+        "std_ms": 1.023211510262415,
+        "min_ms": 13.826040987623855,
+        "max_ms": 17.981708981096745,
+        "p50_ms": 15.322937499149702,
+        "p95_ms": 17.002598250110168
+      },
+      "student": {
+        "mean_ms": 12.532311230024789,
+        "std_ms": 0.3952067609122687,
+        "min_ms": 11.675291985739022,
+        "max_ms": 13.39637499768287,
+        "p50_ms": 12.526750011602417,
+        "p95_ms": 13.218887208495289
+      },
+      "speedup": 1.2401923289219623
+    },
+    "bandwidth": {
+      "teacher_bytes_per_inference": 150528.0,
+      "student_bytes_per_inference": 0.0,
+      "bandwidth_saved_bytes": 150528.0,
+      "bandwidth_saved_kb": 147.0,
+      "bandwidth_saved_mb": 0.1435546875,
+      "bandwidth_reduction_percent": 100.0,
+      "frames_per_clip": 1,
+      "image_size": "224\u00d7224"
+    },
+    "real_time_bandwidth": {
+      "fps_30_teacher_mb_per_sec": 4.306640625,
+      "fps_30_student_mb_per_sec": 0.0,
+      "fps_60_teacher_mb_per_sec": 8.61328125,
+      "fps_60_student_mb_per_sec": 0.0
+    }
+  },
+  "ego4d": {
+    "experiment": "Ego4D",
+    "checkpoint": "results/ego4d_distill/best_student.pt",
+    "model_size": {
+      "teacher_params": 151936009,
+      "student_params": 2301944,
+      "teacher_size_mb": 579.6124954223633,
+      "student_size_mb": 8.797149658203125,
+      "compression_ratio": 66.00334717091293
+    },
+    "latency": {
+      "teacher": {
+        "mean_ms": 16.917469620821066,
+        "std_ms": 0.470089974092687,
+        "min_ms": 16.483541985508054,
+        "max_ms": 19.409125001402572,
+        "p50_ms": 16.764562999014743,
+        "p95_ms": 17.930862207140308
+      },
+      "student": {
+        "mean_ms": 13.155332561582327,
+        "std_ms": 0.5501003535379402,
+        "min_ms": 12.286874989513308,
+        "max_ms": 15.41508300579153,
+        "p50_ms": 13.08739600062836,
+        "p95_ms": 14.215812849579379
+      },
+      "speedup": 1.2859781036798228
+    },
+    "bandwidth": {
+      "teacher_bytes_per_inference": 1204224.0,
+      "student_bytes_per_inference": 0.0,
+      "bandwidth_saved_bytes": 1204224.0,
+      "bandwidth_saved_kb": 1176.0,
+      "bandwidth_saved_mb": 1.1484375,
+      "bandwidth_reduction_percent": 100.0,
+      "frames_per_clip": 8,
+      "image_size": "224\u00d7224"
+    },
+    "real_time_bandwidth": {
+      "fps_30_teacher_mb_per_sec": 34.453125,
+      "fps_30_student_mb_per_sec": 0.0,
+      "fps_60_teacher_mb_per_sec": 68.90625,
+      "fps_60_student_mb_per_sec": 0.0
+    }
+  },
+  "egohands": {
+    "experiment": "EgoHands",
+    "checkpoint": "results/egohands_visualized/best_student.pt",
+    "model_size": {
+      "teacher_params": 151934981,
+      "student_params": 2300916,
+      "teacher_size_mb": 579.6085739135742,
+      "student_size_mb": 8.793228149414062,
+      "compression_ratio": 66.0323892745324
+    },
+    "latency": {
+      "teacher": {
+        "mean_ms": 17.09563461889047,
+        "std_ms": 0.4920781131796007,
+        "min_ms": 16.340791014954448,
+        "max_ms": 18.236792006064206,
+        "p50_ms": 16.966604482149705,
+        "p95_ms": 18.03055625205161
+      },
+      "student": {
+        "mean_ms": 13.14856038952712,
+        "std_ms": 0.7807131302914299,
+        "min_ms": 11.778082989621907,
+        "max_ms": 17.079749988624826,
+        "p50_ms": 12.960207997821271,
+        "p95_ms": 14.569980952364858
+      },
+      "speedup": 1.3001905997638503
+    },
+    "bandwidth": {
+      "teacher_bytes_per_inference": 1204224.0,
+      "student_bytes_per_inference": 0.0,
+      "bandwidth_saved_bytes": 1204224.0,
+      "bandwidth_saved_kb": 1176.0,
+      "bandwidth_saved_mb": 1.1484375,
+      "bandwidth_reduction_percent": 100.0,
+      "frames_per_clip": 8,
+      "image_size": "224\u00d7224"
+    },
+    "real_time_bandwidth": {
+      "fps_30_teacher_mb_per_sec": 34.453125,
+      "fps_30_student_mb_per_sec": 0.0,
+      "fps_60_teacher_mb_per_sec": 68.90625,
+      "fps_60_student_mb_per_sec": 0.0
+    }
+  },
+  "unified": {
+    "experiment": "Unified (EgoHands + Ego4D)",
+    "checkpoint": "results/unified_egocentric/best_student.pt",
+    "model_size": {
+      "teacher_params": 151937037,
+      "student_params": 2302972,
+      "teacher_size_mb": 579.6164169311523,
+      "student_size_mb": 8.801071166992188,
+      "compression_ratio": 65.97433099490571
+    },
+    "latency": {
+      "teacher": {
+        "mean_ms": 17.156114577082917,
+        "std_ms": 0.6152778999270004,
+        "min_ms": 16.159874998265877,
+        "max_ms": 19.54037501127459,
+        "p50_ms": 16.993271492538042,
+        "p95_ms": 18.155422944983002
+      },
+      "student": {
+        "mean_ms": 12.907480418798514,
+        "std_ms": 0.6139453604364764,
+        "min_ms": 11.38737500878051,
+        "max_ms": 15.128458995604888,
+        "p50_ms": 12.841916992329061,
+        "p95_ms": 13.855270500062034
+      },
+      "speedup": 1.329160612329628
+    },
+    "bandwidth": {
+      "teacher_bytes_per_inference": 1204224.0,
+      "student_bytes_per_inference": 0.0,
+      "bandwidth_saved_bytes": 1204224.0,
+      "bandwidth_saved_kb": 1176.0,
+      "bandwidth_saved_mb": 1.1484375,
+      "bandwidth_reduction_percent": 100.0,
+      "frames_per_clip": 8,
+      "image_size": "224\u00d7224"
+    },
+    "real_time_bandwidth": {
+      "fps_30_teacher_mb_per_sec": 34.453125,
+      "fps_30_student_mb_per_sec": 0.0,
+      "fps_60_teacher_mb_per_sec": 68.90625,
+      "fps_60_student_mb_per_sec": 0.0
+    }
+  }
+}

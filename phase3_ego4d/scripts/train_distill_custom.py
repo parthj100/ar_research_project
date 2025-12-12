@@ -46,8 +46,12 @@ class DistillableStudent(nn.Module):
             self.is_mobilevit = False
             if model_name == "mobilenetv3":
                 backbone_name = "mobilenetv3_small_100"
+            elif model_name == "mobilenetv3_large":
+                backbone_name = "mobilenetv3_large_100"
             elif model_name == "efficientnet_b0":
                 backbone_name = "efficientnet_b0"
+            elif model_name == "efficientnet_b1":
+                backbone_name = "efficientnet_b1"
             else:
                 raise ValueError(f"Unknown model_name: {model_name}")
 

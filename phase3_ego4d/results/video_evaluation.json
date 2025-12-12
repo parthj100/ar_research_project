@@ -1,0 +1,40 @@
+{
+  "num_videos": 3,
+  "teacher_accuracy": 0.0,
+  "student_accuracy": 0.0,
+  "teacher_latency_ms": 70.31618100396979,
+  "student_latency_ms": 90.925417006171,
+  "speedup": 0.7733391093405435,
+  "results": {
+    "teacher_predictions": [
+      5,
+      5,
+      5
+    ],
+    "student_predictions": [
+      2,
+      7,
+      7
+    ],
+    "labels": [
+      0,
+      2,
+      6
+    ],
+    "teacher_latencies": [
+      153.0509589938447,
+      28.790459007723257,
+      29.107125010341406
+    ],
+    "student_latencies": [
+      244.41258402657695,
+      15.96241700462997,
+      12.401249987306073
+    ],
+    "video_paths": [
+      "data/ego4d/videos/0_walking.mp4",
+      "data/ego4d/videos/1_looking_around.mp4",
+      "data/ego4d/videos/2_reaching.mp4"
+    ]
+  }
+}

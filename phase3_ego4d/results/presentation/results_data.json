@@ -1,0 +1,90 @@
+{
+  "experiments": {
+    "Human Action v3": {
+      "model": "MobileViT-XXS",
+      "dataset": "Human Action (15 classes)",
+      "train_acc": 93.0,
+      "val_acc": 75.0,
+      "params_m": 2.3,
+      "size_mb": 8.8,
+      "latency_ms": 12.5,
+      "distilled": true
+    },
+    "Ego4D (small)": {
+      "model": "MobileViT-XXS",
+      "dataset": "Ego4D (8 classes)",
+      "train_acc": 85.0,
+      "val_acc": 0.0,
+      "params_m": 2.3,
+      "size_mb": 8.8,
+      "latency_ms": 12.5,
+      "distilled": true
+    },
+    "EgoHands": {
+      "model": "MobileViT-XXS",
+      "dataset": "EgoHands (4 classes)",
+      "train_acc": 100.0,
+      "val_acc": 100.0,
+      "params_m": 2.3,
+      "size_mb": 8.8,
+      "latency_ms": 12.5,
+      "distilled": true
+    },
+    "Unified (MobileViT)": {
+      "model": "MobileViT-XXS",
+      "dataset": "Unified (12 classes)",
+      "train_acc": 96.1,
+      "val_acc": 87.5,
+      "params_m": 2.3,
+      "size_mb": 8.8,
+      "latency_ms": 13.2,
+      "distilled": true
+    },
+    "Unified (MobileNetV3) Distilled": {
+      "model": "MobileNetV3",
+      "dataset": "Unified (12 classes)",
+      "train_acc": 85.9,
+      "val_acc": 92.65,
+      "params_m": 1.8,
+      "size_mb": 16.5,
+      "latency_ms": 838.3,
+      "distilled": true
+    },
+    "Unified (EfficientNet-B0) Distilled": {
+      "model": "EfficientNet-B0",
+      "dataset": "Unified (12 classes)",
+      "train_acc": 85.4,
+      "val_acc": 88.24,
+      "params_m": 4.7,
+      "size_mb": 53.9,
+      "latency_ms": 2363.9,
+      "distilled": true
+    },
+    "Unified (MobileNetV3) Baseline": {
+      "model": "MobileNetV3",
+      "dataset": "Unified (12 classes)",
+      "train_acc": 84.26,
+      "val_acc": 85.29,
+      "params_m": 1.8,
+      "size_mb": 16.5,
+      "latency_ms": 838.3,
+      "distilled": false
+    },
+    "Unified (EfficientNet-B0) Baseline": {
+      "model": "EfficientNet-B0",
+      "dataset": "Unified (12 classes)",
+      "train_acc": 86.85,
+      "val_acc": 86.03,
+      "params_m": 4.7,
+      "size_mb": 53.9,
+      "latency_ms": 2363.9,
+      "distilled": false
+    }
+  },
+  "teacher": {
+    "model": "CLIP ViT-B/32",
+    "params_m": 151.9,
+    "size_mb": 580.0,
+    "latency_ms": 15.0
+  }
+}
