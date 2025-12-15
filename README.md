@@ -131,19 +131,3 @@ pip install transformers timm ego4d
 4. **Validated approach** across symbolic and visual domains
 5. **Provided framework** for real AR data integration (Ego4D)
 
-## 🎯 Next Steps
-
-- [ ] Complete Ego4D data integration
-- [ ] Train MobileViT student on real egocentric data
-- [ ] Deploy to mobile device (iOS/Android)
-- [ ] Measure real-world latency metrics
-- [ ] Compare with baseline on-device models
-
-## 👥 Authors
-
-Parth Joshi
-
-## 📄 License
-
-MIT License
-
