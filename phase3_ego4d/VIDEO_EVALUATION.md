@@ -4,7 +4,7 @@
 
 We've successfully implemented evaluation on **actual video files** (not just pre-extracted frames). This allows testing the models in a more realistic scenario that's closer to real-world AR applications.
 
-## ✅ What's Working
+## What's Working
 
 1. **Video Loading**: Can load and process `.mp4`, `.avi`, `.mov`, `.mkv` files
 2. **Frame Extraction**: Extracts frames on-the-fly from videos
@@ -18,7 +18,7 @@ We've successfully implemented evaluation on **actual video files** (not just pr
 2. **`scripts/prepare_videos_from_frames.py`**: Helper to create videos from frames
 3. **`results/video_evaluation.json`**: Evaluation results
 
-## 🚀 Usage
+## Usage
 
 ### Option 1: Use Existing Videos
 
@@ -62,7 +62,7 @@ python scripts/eval_on_videos.py \
     --num-actions 12
 ```
 
-## 📊 Results
+## Results
 
 ### Test Run (3 videos from Ego4D)
 
@@ -76,7 +76,7 @@ python scripts/eval_on_videos.py \
 - Label extraction from filenames may not match training labels
 - Videos created from frames may have different characteristics
 
-## 🔧 Technical Details
+## Technical Details
 
 ### Video Loading Libraries
 
@@ -105,32 +105,3 @@ Both teacher and student models support:
 - Multi-frame input: `(B, T, C, H, W)`
 - Temporal attention pooling (student)
 - Real-time inference
-
-## 🎯 Benefits of Video-based Evaluation
-
-1. **More Realistic**: Closer to real-world AR scenarios
-2. **Temporal Consistency**: Tests actual video sequences
-3. **End-to-End**: Tests complete pipeline from video → frames → inference
-4. **Latency Accuracy**: More accurate latency measurements on real video data
-
-## 📝 Next Steps
-
-1. **Get More Videos**: Download original video files from datasets
-2. **Better Labeling**: Improve label extraction from video metadata
-3. **Batch Processing**: Process multiple videos in parallel
-4. **Real-time Demo**: Create a real-time video processing demo
-
-## ⚠️ Limitations
-
-1. **Video Files**: Original video files may not be available (only frames)
-2. **Label Matching**: Label extraction from filenames may not be perfect
-3. **Small Sample**: Limited number of test videos
-4. **Decord**: May not be available on all platforms
-
-## 💡 Tips
-
-- Start with a small number of videos (`--max-videos 5`) for testing
-- Check video file formats (`.mp4` is most compatible)
-- Ensure videos are in the correct directory structure
-- Use `prepare_videos_from_frames.py` if you only have frames
-
