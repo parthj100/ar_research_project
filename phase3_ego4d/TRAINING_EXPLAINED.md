@@ -4,7 +4,7 @@
 
 This document explains how the teacher-student distillation training process works with video frames, from data loading to model updates.
 
-## 🔄 Complete Training Pipeline
+## Complete Training Pipeline
 
 ```
 Video Files → Frame Extraction → DataLoader → Batch → Models → Loss → Backward → Update
@@ -341,7 +341,7 @@ for epoch in range(num_epochs):
 
 ---
 
-## 📊 Data Flow Visualization
+## Data Flow Visualization
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -407,7 +407,7 @@ for epoch in range(num_epochs):
 
 ---
 
-## 🎯 Key Concepts
+## Key Concepts
 
 ### 1. **Temporal Processing**
 - Videos have **temporal dimension** (8 frames)
@@ -473,25 +473,4 @@ Let's trace one video through the pipeline:
 ```
 
 ---
-
-## 💡 Why This Works
-
-1. **Teacher provides rich knowledge**: CLIP has seen millions of images
-2. **Student learns efficiently**: Smaller model, faster inference
-3. **Temporal understanding**: Attention learns which frames matter
-4. **Balanced learning**: Feature + Response + Task losses ensure good performance
-
----
-
-## 📈 Training Progress
-
-As training progresses:
-- **Feature Loss** decreases → Student embeddings match teacher
-- **Response Loss** decreases → Student predictions match teacher's soft labels
-- **Task Loss** decreases → Student predicts correct actions
-- **Accuracy** increases → Model gets better at classification
-
-The student learns to be both:
-- **Accurate**: Predicts correct actions (Task Loss)
-- **Knowledgeable**: Matches teacher's understanding (Feature + Response Loss)
 
