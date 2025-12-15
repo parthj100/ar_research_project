@@ -9,7 +9,7 @@ This phase implements teacher-student distillation using:
 
 ---
 
-## 🎯 Key Improvements over Phase 1-2
+## Key Improvements over Phase 1-2
 
 | Aspect | Phase 1-2 | Phase 3 |
 |--------|-----------|---------|
@@ -21,7 +21,7 @@ This phase implements teacher-student distillation using:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Setup Environment
 
@@ -129,7 +129,7 @@ Total: ~1.3M parameters
 
 ---
 
-## 🎓 Distillation Strategy
+## Distillation Strategy
 
 We use a **combined distillation loss**:
 
@@ -151,7 +151,7 @@ This combines:
 
 ---
 
-## 📊 Expected Results
+## Expected Results
 
 | Metric | CLIP Teacher | MobileViT Student |
 |--------|--------------|-------------------|
@@ -162,10 +162,10 @@ This combines:
 | **Accuracy** | 70-80% | 60-75% |
 
 **Key Achievements:**
-- 🚀 **66x model compression**
-- ⚡ **10-13x latency reduction**
-- 📱 **Deployable on mobile devices**
-- 📉 **<15% accuracy drop** (with good distillation)
+-  **66x model compression**
+- **10-13x latency reduction**
+- **Deployable on mobile devices**
+- **<15% accuracy drop** (with good distillation)
 
 ---
 
@@ -261,7 +261,7 @@ Download ~10-50 videos (not the full 3,670 hours!) for efficient testing.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "No CLIP backend found"
 ```bash
@@ -293,7 +293,7 @@ ego4d --auth  # Follow authentication prompts
 
 ---
 
-## 📚 References
+## References
 
 ### Knowledge Distillation
 - Hinton et al. "Distilling the Knowledge in a Neural Network" (2015)
@@ -306,24 +306,3 @@ ego4d --auth  # Follow authentication prompts
 ### MobileViT
 - Mehta & Rastegari "MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer" (2022)
 - timm implementation: https://github.com/huggingface/pytorch-image-models
-
-### Ego4D
-- Grauman et al. "Ego4D: Around the World in 3,000 Hours of Egocentric Video" (2022)
-- Dataset: https://ego4d-data.org/
-
----
-
-## 🎯 Next Steps
-
-1. ✅ Test with synthetic data
-2. ⬜ Download Ego4D subset
-3. ⬜ Train on real egocentric video
-4. ⬜ Optimize for mobile deployment (ONNX/CoreML/TFLite)
-5. ⬜ Benchmark on actual mobile device
-6. ⬜ Compare with Phase 1 & 2 results
-
----
-
-## 📄 License
-
-MIT License - See main repository README.
